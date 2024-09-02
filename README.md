@@ -1,17 +1,17 @@
 # Super-Simple-ESP32-Bluetooth-Receiver
 This is a project aimed to use a ESP32 as an A2DP Bluetooth Speaker adapter
 
-Prerequisites:
+# Prerequisites:
 
-Hardware
+# Hardware
 * ESP32 board (compatible with A2DP. It is IMPORTANT)
 * [Pimoroni Pico Audio Pack module](https://shop.pimoroni.com/products/pico-audio-pack)
 * 5 pieces of wire
 
-Software
+# Software
 * Arduino IDE
 
-HowTo:
+# HowTo:
 1. Check if Your ESP32 is able to handle A2DP. I have figured out (the hard way) that neither ESP32-S2 nor ESP32-C3 support A2DP so they are out of game. I have ended up using ESP32-WROVER-E ([pdf](https://www.espressif.com/sites/default/files/documentation/esp32-wrover-e_esp32-wrover-ie_datasheet_en.pdf)) with a [connector board](https://www.aliexpress.com/item/4000587174844.html) - worked as a charm.
 2. Connect the Pico Audio Pack module as follows:
    * Pico Pin 39 to ESP32 5V pin
@@ -34,3 +34,8 @@ HowTo:
   * `tar -xvvf v0.9.8.tar.gz && rm v0.9.8.tar.gz`
   * `git clone https://github.com/pschatzmann/ESP32-A2DP.git`
 7. Open Arduino IDE and open there an "ino" file from this repo. Compile, upload - that's it.
+
+
+# Result
+
+![View 1](esp32-bt-adapter.png)
